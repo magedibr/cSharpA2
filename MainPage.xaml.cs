@@ -26,5 +26,10 @@ namespace Abdelrahman_Mohamed_991343504_A2
         {
             this.InitializeComponent();
         }
+
+        private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+
+        }
     }
 }

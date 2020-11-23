@@ -70,6 +70,15 @@
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\ApplicationInfo.xbf">
+      <PackagePath>ApplicationInfo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Calculator.xbf">
+      <PackagePath>Calculator.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Dev.xbf">
+      <PackagePath>Dev.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>

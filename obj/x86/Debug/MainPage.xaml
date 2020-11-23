@@ -9,15 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid x:Name="leftNav">
+        <Grid x:ConnectionId='2' x:Name="leftNav">
             <NavigationView>
-                <Canvas Margin="104,157,1058,-67">
-                    <Button Content="sad" />
-                </Canvas>   
-            
+                <Button Content="Button" Margin="-275,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.424,-1.247"/>
             </NavigationView>
 
         </Grid>
 
     </Grid>
 </Page>
+

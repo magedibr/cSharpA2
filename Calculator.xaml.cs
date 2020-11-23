@@ -56,7 +56,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
             }
         }//EOFunc
 
-
+//Enum used to store precedence
         enum Operands { MINUS = 1, PLUS = 2, DIV = 3, TIMES = 4, NUMBER = 5 };
         private void AddOperationToResult(Operands operands)
         {
@@ -73,13 +73,13 @@ namespace Abdelrahman_Mohamed_991343504_A2
             switch (operands)
             {
                 case Operands.MINUS: AnsBox.Text += "-"; break;
-                
+
                 case Operands.PLUS: AnsBox.Text += "+"; break;
-                
+
                 case Operands.DIV: AnsBox.Text += "/"; break;
-             
+
                 case Operands.TIMES: AnsBox.Text += "x"; break;
-             //   case Operands: AnsBox.Text += "-"; break;
+                    //   case Operands: AnsBox.Text += "-"; break;
 
 
 
@@ -125,7 +125,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(4); 
+            AddNumberToResult(4);
         }
 
         private void button5_Click(object sender, RoutedEventArgs e)
@@ -160,7 +160,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
             AddNumberToResult(0);
         }
 
-              private void Divbtn_Click(object sender, RoutedEventArgs e)
+        private void Divbtn_Click(object sender, RoutedEventArgs e)
         {
             AddOperationToResult(Operands.DIV);
         }
@@ -199,27 +199,122 @@ namespace Abdelrahman_Mohamed_991343504_A2
 
         }
         //Actual tree construction from the expression
-        private OperandClass BuildTreeOperand() {
-            
+        private OperandClass BuildTreeOperand()
+        {
+
             OperandClass tree = null;
-            
+
             string expression = AnsBox.Text;
 
-            if (!char.IsNumber(expression.Last())) { 
-            
-            
-            
-            
-            
+            if (!char.IsNumber(expression.Last()))
+            {
+
+
+                expression = expression.Substring(0, expression.Length - 1);
+
+
             }
-        
+
+            string numberStr = string.Empty;
+            foreach (char c in expression.ToCharArray())
+            {
+
+                if (char.IsNumber(c) || c == '.' || numberStr == string.Empty && c == '-')
+                {
+
+                    numberStr += c;
+                }
+                else
+                {
+
+                    AddOperandToTree(ref tree, new OperandClass() { value = double.Parse(numberStr) });
+                    numberStr = string.Empty;
+
+                    Operands op = Operands.MINUS; //Set default case
+
+                    switch (c)
+                    {
+
+                        case '-': op = Operands.MINUS; break;
+                        case '+': op = Operands.PLUS; break;
+                        case '/': op = Operands.DIV; break;
+                        case 'x': op = Operands.TIMES; break;
+
+                    }
+                    AddOperandToTree(ref tree, new OperandClass() { opp = op });
+
+                }
+
+
+            }
+
+            //Last number
+            AddOperandToTree(ref tree, new OperandClass { value = double.Parse(numberStr) });
+            return tree;
         }
+        private void AddOperandToTree(ref OperandClass tree, OperandClass elem)
+        {
+            if (tree == null)
+            {
+
+                tree = elem;
+            
+            }else
+            {
+                if (elem.opp < tree.opp)
+                {
+                    OperandClass auxTree = tree;
+                    tree = elem;
+                    elem.left = auxTree;
+
+                }else
+                {
+                    AddOperandToTree(ref tree.right, elem);// recursion
+                }
+            }
+
+        }
+
+        private double CalcTree(OperandClass tree)
+        {
+            if(tree.left == null && tree.right == null) 
+            {
+                return tree.value;
+
+            }
+            else //its an operation
+            {
+                double subResult = 0;
+                switch(tree.opp)
+                {
+                    
+                    case Operands.MINUS: subResult = CalcTree(tree.left)-CalcTree(tree.right);break;
+                    case Operands.PLUS: subResult = CalcTree(tree.left)+CalcTree(tree.right);break;
+                    case Operands.DIV: subResult = CalcTree(tree.left)/CalcTree(tree.right);break;
+                    case Operands.TIMES: subResult = CalcTree(tree.left)*CalcTree(tree.right);break;
+
+
+                }
+
+                return subResult;
+            }
+        }
+
+
+
 
 
 
         private void Eqbtn_Click(object sender, RoutedEventArgs e)
         {
+
+            //Qualify input
+
+            if (string.IsNullOrEmpty(AnsBox.Text)) return;
+
             OperandClass tree = BuildTreeOperand();
+
+            double value = CalcTree(tree);
         }
 
         #endregion Equals
