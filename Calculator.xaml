@@ -24,7 +24,7 @@
             <Button  x:Name="Plsbtn"  Content="+" Margin="528,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498" Click="Plsbtn_Click"/>
             <Button  x:Name="Tmsbtn"  Content="*" Margin="373,662,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="1.904,2.689" Click="Tmsbtn_Click"/>
             <Button  x:Name="Divbtn"  Content="/" Margin="221,662,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-2.284,1.751" Click="Divbtn_Click" />
-            <Button  x:Name="Cbtn"    Content="C" Margin="528,0,0,314" VerticalAlignment="Bottom" RenderTransformOrigin="-11.436,-2.012" Height="104" Width="115" Click="Cbtn_Click"/>
+            <Button  x:Name="Cbtn"    Content="C" Margin="528,657,0,0"  RenderTransformOrigin="-11.436,-2.012" Height="104" Width="115" Click="Cbtn_Click" VerticalAlignment="Top"/>
             <Button  x:Name="Eqbtn"   Content="=" Margin="672,662,0,0" Height="104" Width="115" RenderTransformOrigin="0.158,0.498" VerticalAlignment="Top" Click="Eqbtn_Click"/>
             <TextBox x:Name="AnsBox" HorizontalAlignment="Left" Margin="221,96,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="566"/>
 
