@@ -14,8 +14,7 @@
                 <NavigationView.MenuItems>
                    
                     <NavigationViewItemHeader Content="Application" />
-                    <NavigationViewItem x:Name="homeButton" Content="Home" Icon="Street" Tag="HomeP"/>
-                    <NavigationViewItem x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
+                   <NavigationViewItem x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
                    
                     <NavigationViewItemSeparator/>
                     <NavigationViewItemHeader Content="Information"/>
