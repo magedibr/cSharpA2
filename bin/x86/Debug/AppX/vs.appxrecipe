@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-23T21:29:04.995</Modified>
+      <Modified>2020-11-23T23:01:56.180</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Abdelrahman_Mohamed_991343504_A2.exe">
       <PackagePath>entrypoint\Abdelrahman_Mohamed_991343504_A2.exe</PackagePath>
-      <Modified>2020-11-23T21:29:04.114</Modified>
+      <Modified>2020-11-23T23:01:55.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,27 +86,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Abdelrahman_Mohamed_991343504_A2.xr.xml">
       <PackagePath>Abdelrahman_Mohamed_991343504_A2.xr.xml</PackagePath>
-      <Modified>2020-11-23T21:29:03.874</Modified>
+      <Modified>2020-11-23T22:40:49.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-11-23T21:29:03.904</Modified>
+      <Modified>2020-11-23T23:01:55.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\ApplicationInfo.xbf">
       <PackagePath>ApplicationInfo.xbf</PackagePath>
-      <Modified>2020-11-23T21:29:03.904</Modified>
+      <Modified>2020-11-23T23:01:55.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Calculator.xbf">
       <PackagePath>Calculator.xbf</PackagePath>
-      <Modified>2020-11-23T21:29:03.904</Modified>
+      <Modified>2020-11-23T23:01:55.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Dev.xbf">
       <PackagePath>Dev.xbf</PackagePath>
-      <Modified>2020-11-23T21:29:03.904</Modified>
+      <Modified>2020-11-23T23:01:55.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-11-23T21:29:03.904</Modified>
+      <Modified>2020-11-23T23:01:55.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a_b_z\source\repos\Abdelrahman_Mohamed_991343504_A2\bin\x86\Debug\Core\Abdelrahman_Mohamed_991343504_A2.exe">
       <PackagePath>Abdelrahman_Mohamed_991343504_A2.exe</PackagePath>
-      <Modified>2020-11-23T21:29:04.973</Modified>
+      <Modified>2020-11-23T23:01:56.177</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

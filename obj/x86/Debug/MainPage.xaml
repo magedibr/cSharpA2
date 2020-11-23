@@ -9,13 +9,34 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid x:ConnectionId='2' x:Name="leftNav">
-            <NavigationView>
-                <Button Content="Button" Margin="-275,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.424,-1.247"/>
-            </NavigationView>
+                    <NavigationView x:ConnectionId='2' x:Name="NavView"                                            >
 
-        </Grid>
+                <NavigationView.MenuItems>
+                   
+                    <NavigationViewItemHeader Content="Application" />
+                    <NavigationViewItem x:ConnectionId='3' x:Name="homeButton" Content="Home" Icon="Street" Tag="HomeP"/>
+                    <NavigationViewItem x:ConnectionId='4' x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
+                   
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItemHeader Content="Information"/>
+                    <NavigationViewItem x:ConnectionId='5' x:Name="appInfoBtn" Content="Application Information" Icon="Import" Tag="AppIPage"/>
+                    <NavigationViewItem x:ConnectionId='6' x:Name="DevInfoBtn" Content="Developer Information" Icon="ContactInfo" Tag="DevIPage"/>
 
+                </NavigationView.MenuItems>
+
+                <Frame x:ConnectionId='7' x:Name="ContentFrame">
+
+                                        
+                 
+                </Frame>
+                
+                
+            </NavigationView>    
+        
+        
+        
+        
+       
     </Grid>
 </Page>
 

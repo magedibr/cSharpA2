@@ -9,15 +9,33 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid x:Name="leftNav">
-            <NavigationView>
-                <Canvas Margin="104,157,1058,-67">
-                    <Button Content="sad" />
-                </Canvas>   
-            
-            </NavigationView>
+                    <NavigationView x:Name="NavView" SelectionChanged="NavView_SelectionChanged">
 
-        </Grid>
+                <NavigationView.MenuItems>
+                   
+                    <NavigationViewItemHeader Content="Application" />
+                    <NavigationViewItem x:Name="homeButton" Content="Home" Icon="Street" Tag="HomeP"/>
+                    <NavigationViewItem x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
+                   
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItemHeader Content="Information"/>
+                    <NavigationViewItem x:Name="appInfoBtn" Content="Application Information" Icon="Import" Tag="AppIPage"/>
+                    <NavigationViewItem x:Name="DevInfoBtn" Content="Developer Information" Icon="ContactInfo" Tag="DevIPage"/>
 
+                </NavigationView.MenuItems>
+
+                <Frame x:Name="ContentFrame">
+
+                                        
+                 
+                </Frame>
+                
+                
+            </NavigationView>    
+        
+        
+        
+        
+       
     </Grid>
 </Page>
