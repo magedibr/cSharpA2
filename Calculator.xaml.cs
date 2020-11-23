@@ -31,6 +31,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
         public Calculator()
         {
             this.InitializeComponent();
+            AnsBox.Text = "0";
         }
 
         private void AddNumberToResult(double addResultNumber)
@@ -77,7 +78,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
                 
                 case Operands.DIV: AnsBox.Text += "/"; break;
              
-                case Operands.TIMES: AnsBox.Text += "*"; break;
+                case Operands.TIMES: AnsBox.Text += "x"; break;
              //   case Operands: AnsBox.Text += "-"; break;
 
 
@@ -159,95 +160,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
             AddNumberToResult(0);
         }
 
-        private void button11_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void button12_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void button13_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void button14_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void button15_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        private void button16_Click(object sender, RoutedEventArgs e)
-        {
-            y = input;
-            double num1, num2;
-
-            double.TryParse(x, out num1);
-            double.TryParse(y, out num2);
-
-            if (operation == '+')
-            {
-                result = num1 + num2;
-                AnsBox.Text = result.ToString();
-            }
-            else if (operation == '-')
-            {
-                result = num1 - num2;
-                AnsBox.Text = result.ToString();
-            }
-            else if (operation == '*')
-            {
-                result = num1 * num2;
-                AnsBox.Text = result.ToString();
-            }
-            else if (operation == '/')
-            {
-                if (num2 != 0)
-                {
-                    result = num1 / num2;
-                    AnsBox.Text = result.ToString();
-                }
-                else
-                {
-                    AnsBox.Text = "DIV/Zero!";
-                }
-
-            }
-        }
-
-        private void button17_Click(object sender, RoutedEventArgs e)
-        {
-            AnsBox.Text = "0";
-        }
-
-        private void Divbtn_Click(object sender, RoutedEventArgs e)
+              private void Divbtn_Click(object sender, RoutedEventArgs e)
         {
             AddOperationToResult(Operands.DIV);
         }
@@ -266,6 +179,50 @@ namespace Abdelrahman_Mohamed_991343504_A2
         {
             AddOperationToResult(Operands.MINUS);
         }
+
+        private void Cbtn_Click(object sender, RoutedEventArgs e)
+        {
+            AnsBox.Text = 0.ToString();
+        }
+
+
+        #region Equals
+        //Tree definition to be able to determine order of precedence
+
+        private class OperandClass
+        {
+            public Operands opp = Operands.NUMBER;
+            public double value = 0;
+
+            public OperandClass left = null;
+            public OperandClass right = null;
+
+        }
+        //Actual tree construction from the expression
+        private OperandClass BuildTreeOperand() {
+            
+            OperandClass tree = null;
+            
+            string expression = AnsBox.Text;
+
+            if (!char.IsNumber(expression.Last())) { 
+            
+            
+            
+            
+            
+            }
+        
+        }
+
+
+
+        private void Eqbtn_Click(object sender, RoutedEventArgs e)
+        {
+            OperandClass tree = BuildTreeOperand();
+        }
+
+        #endregion Equals
     }
 }
 
