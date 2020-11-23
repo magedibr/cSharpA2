@@ -9,6 +9,28 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid Margin="10,10,-10,-10">
+            <Button x:Name="button1" Content= "1" Margin="221,215,0,0" VerticalAlignment="Top" Height="104" Width="115" Click="button1_Click"/>
+            <Button x:Name="button2" Content= "2" Margin="373,215,0,0" VerticalAlignment="Top" Height="104" Width="115"/>
+            <Button x:Name="button3" Content= "3" Margin="528,215,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"/>
+            <Button x:Name="button4" Content= "4" Margin="672,215,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-0.827,1.184"/>
+            <Button x:Name="button5" Content= "5" Margin="221,362,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="4.207,0.43"/>
+            <Button x:Name="button6" Content= "6" Margin="373,367,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"/>
+            <Button x:Name="button7" Content= "7" Margin="528,367,0,0" VerticalAlignment="Top" Height="104" Width="115"/>
+            <Button x:Name="button8" Content= "8" Margin="672,367,0,0" VerticalAlignment="Top" Height="104" Width="115"/>
+            <Button x:Name="button9" Content= "9" Margin="221,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"/>
+            <Button x:Name="button10" Content="0" Margin="373,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.457,0.507"/>
+            <Button x:Name="Minbtn" Content="-" Margin="672,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-1.566,2.94" Click="Minbtn_Click"/>
+            <Button x:Name="Plsbtn" Content="+" Margin="528,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498" Click="Plsbtn_Click"/>
+            <Button x:Name="Tmsbtn" Content="*" Margin="373,662,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="1.904,2.689" Click="Tmsbtn_Click"/>
+            <Button x:Name="Divbtn" Content="/" Margin="221,662,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-2.284,1.751" Click="Divbtn_Click" />
+            <Button x:Name="Cbtn" Content="C" Margin="672,0,0,895" VerticalAlignment="Bottom" RenderTransformOrigin="-11.436,-2.012" Height="89" Width="115" Click="button17_Click"/>
+            <Button x:Name="Eqbtn" Content="=" Margin="672,662,0,0" Height="104" Width="115" RenderTransformOrigin="0.158,0.498" VerticalAlignment="Top"/>
+            <TextBox x:Name="AnsBox" HorizontalAlignment="Left" Margin="238,96,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="405"/>
+
+
+
+        </Grid>
 
     </Grid>
 </Page>

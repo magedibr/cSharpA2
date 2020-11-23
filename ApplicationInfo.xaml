@@ -13,8 +13,8 @@
 
 
 
-            <TextBlock Text="Calculator Application" TextWrapping="Wrap" Canvas.Left="185" Canvas.Top="189" Height="183" Width="1174" FontWeight="Bold" FontSize="100" SelectionChanged="TextBlock_SelectionChanged"/>
-            <TextBlock Canvas.Left="495" Canvas.Top="420" Text="Version 1.0" TextWrapping="Wrap" Height="84" Width="377" FontSize="60"/>
+            <TextBlock Text="Calculator Application" TextWrapping="Wrap" Canvas.Left="59" Canvas.Top="168" Height="183" Width="1174" FontWeight="Bold" FontSize="100" SelectionChanged="TextBlock_SelectionChanged"/>
+            <TextBlock Canvas.Left="437" Canvas.Top="413" Text="Version 1.0" TextWrapping="Wrap" Height="84" Width="377" FontSize="60"/>
         </Canvas>
 
     </Grid>
