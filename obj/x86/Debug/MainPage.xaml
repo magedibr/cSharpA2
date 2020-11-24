@@ -9,33 +9,34 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-                    <NavigationView x:ConnectionId='2' x:Name="NavView"                                            >
+        <NavigationView x:ConnectionId='2' x:Name="NavView"                                            >
 
-                <NavigationView.MenuItems>
+            <NavigationView.MenuItems>
 
                 <NavigationViewItemHeader Content="Home"/>
+                <NavigationViewItem x:ConnectionId='3' x:Name="appInfoBtn" Content="Application Information" Icon="Import" Tag="AppIPage"/>
 
                 <NavigationViewItemHeader Content="Application" />
-                    <NavigationViewItem x:ConnectionId='3' x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
-                   
-                    <NavigationViewItemSeparator/>
-                    <NavigationViewItemHeader Content="Information"/>
-                                        <NavigationViewItem x:ConnectionId='4' x:Name="DevInfoBtn" Content="Developer Information" Icon="ContactInfo" Tag="DevIPage"/>
+                <NavigationViewItem x:ConnectionId='4' x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
 
-                </NavigationView.MenuItems>
-            
-            <Frame x:ConnectionId='5' x:Name="ContentFrame">
-                                            
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="Information"/>
+                <NavigationViewItem x:ConnectionId='5' x:Name="DevInfoBtn" Content="Developer Information" Icon="ContactInfo" Tag="DevIPage"/>
+
+            </NavigationView.MenuItems>
+
+            <Frame x:ConnectionId='6' x:Name="ContentFrame">
+
 
             </Frame>
-                
-                
-            </NavigationView>    
-        
-        
-        
-        
-       
+
+
+        </NavigationView>
+
+
+
+
+
     </Grid>
 </Page>
 

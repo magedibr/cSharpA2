@@ -9,11 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Canvas Margin="8,7,-8,-7">
+        <Canvas Margin="8,7,-8,-7" Background="BlanchedAlmond">
 
 
 
-            <TextBlock Text="Calculator Application" TextWrapping="Wrap" Canvas.Left="59" Canvas.Top="168" Height="183" Width="1174" FontWeight="Bold" FontSize="100" SelectionChanged="TextBlock_SelectionChanged"/>
+            <TextBlock Text="Calculator Application" TextWrapping="Wrap" Canvas.Left="82" Canvas.Top="227" Height="140" Width="1094" FontWeight="Bold" FontSize="100" SelectionChanged="TextBlock_SelectionChanged"/>
             <TextBlock Canvas.Left="437" Canvas.Top="413" Text="Version 1.0" TextWrapping="Wrap" Height="84" Width="377" FontSize="60"/>
         </Canvas>
 

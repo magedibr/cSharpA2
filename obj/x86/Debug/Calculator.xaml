@@ -8,29 +8,26 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid Margin="10,10,-10,-10">
-            <Button x:ConnectionId='2'  x:Name="button1" Content= "1" Margin="221,215,0,0" VerticalAlignment="Top" Height="104" Width="115"                      />
-            <Button x:ConnectionId='3'  x:Name="button2" Content= "2" Margin="373,215,0,0" VerticalAlignment="Top" Height="104" Width="115"                      />
-            <Button x:ConnectionId='4'  x:Name="button3" Content= "3" Margin="528,215,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"                      />
-            <Button x:ConnectionId='5'  x:Name="button4" Content= "4" Margin="672,215,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-0.827,1.184"                       />
-            <Button x:ConnectionId='6'  x:Name="button5" Content= "5" Margin="221,362,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="4.207,0.43"                      />
-            <Button x:ConnectionId='7'  x:Name="button6" Content= "6" Margin="373,367,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"                      />
-            <Button x:ConnectionId='8'  x:Name="button7" Content= "7" Margin="528,367,0,0" VerticalAlignment="Top" Height="104" Width="115"                      />
-            <Button x:ConnectionId='9'  x:Name="button8" Content= "8" Margin="672,367,0,0" VerticalAlignment="Top" Height="104" Width="115"                       />
-            <Button x:ConnectionId='10'  x:Name="button9" Content= "9" Margin="221,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"                      />
-            <Button x:ConnectionId='11'  x:Name="button10" Content="0" Margin="373,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.457,0.507"                        />
-            <Button x:ConnectionId='12'  x:Name="Minbtn"  Content="-" Margin="672,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-1.566,2.94"                     />
-            <Button x:ConnectionId='13'  x:Name="Plsbtn"  Content="+" Margin="528,520,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="0.158,0.498"                     />
-            <Button x:ConnectionId='14'  x:Name="Tmsbtn"  Content="*" Margin="373,662,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="1.904,2.689"                     />
-            <Button x:ConnectionId='15'  x:Name="Divbtn"  Content="/" Margin="221,662,0,0" VerticalAlignment="Top" Height="104" Width="115" RenderTransformOrigin="-2.284,1.751"                      />
-            <Button x:ConnectionId='16'  x:Name="Cbtn"    Content="C" Margin="528,657,0,0"  RenderTransformOrigin="-11.436,-2.012" Height="104" Width="115"                    VerticalAlignment="Top"/>
-            <Button x:ConnectionId='17'  x:Name="Eqbtn"   Content="=" Margin="672,662,0,0" Height="104" Width="115" RenderTransformOrigin="0.158,0.498" VerticalAlignment="Top"                    />
-            <TextBox x:ConnectionId='18' x:Name="AnsBox" HorizontalAlignment="Left" Margin="221,96,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="566"/>
+    <Grid Background="Bisque">
+        <Button x:ConnectionId='2'  x:Name="button1" Content= "1" Margin="367,177,0,0" VerticalAlignment="Top" Height="93" Width="103"                       Background="#33FAEA0C"  Foreground="#FF100808" BorderBrush="#FF181616"/>
+        <Button x:ConnectionId='3'  x:Name="button2" Content= "2" Margin="474,177,0,0" VerticalAlignment="Top" Height="93" Width="103"                        Background="#33FAEA0C"  RenderTransformOrigin="0.478,-0.048"  Foreground="Black" BorderBrush="#FF201A1A"/>
+        <Button x:ConnectionId='4'  x:Name="button3" Content= "3" Margin="581,177,0,0" VerticalAlignment="Top" Height="93" Width="103" RenderTransformOrigin="0.158,0.498"                       Background="#33FAEA0C" BorderBrush="#FF1A1818"/>
+        <Button x:ConnectionId='5'  x:Name="button4" Content= "4" Margin="688,177,0,0" VerticalAlignment="Top" Height="93" Width="103" Background="#33FAEA0C" RenderTransformOrigin="-0.827,1.184"                        BorderBrush="#FF141313" />
+        <Button x:ConnectionId='6'  x:Name="button5" Content= "5" Margin="367,274,0,0" Height="94" Width="103" RenderTransformOrigin="4.207,0.43"                       Background="#33FAEA0C"  BorderBrush="#FF1F1A1A" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='7'  x:Name="button6" Content= "6" Margin="474,276,0,0" Height="94" Width="103" RenderTransformOrigin="0.158,0.498"                       Background="#33FAEA0C"  BorderBrush="#FF181313" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='8'  x:Name="button7" Content= "7" Margin="581,276,0,0" Height="94" Width="103"                       Background="#33FAEA0C"   BorderBrush="#FF201616" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='9'  x:Name="button8" Content= "8" Margin="688,276,0,0" Height="94" Width="103"                       RenderTransformOrigin="0.47,0.5" BorderBrush="#FF1C0F0F" Background="#33FAEA0C" VerticalAlignment="Top" />
+        <Button x:ConnectionId='10'  x:Name="button9" Content= "9" Margin="367,374,0,0" VerticalAlignment="Top" Height="94" Width="103" RenderTransformOrigin="0.158,0.498"                       Background="#33FAEA0C" BorderBrush="#FF351F1F"/>
+        <Button x:ConnectionId='11'  x:Name="button10" Content="0" Margin="474,374,0,0" VerticalAlignment="Top" Height="94" Width="103" RenderTransformOrigin="0.457,0.507"                        Background="#33FAEA0C"  BorderBrush="#FF2A1818" />
+        <Button x:ConnectionId='12'  x:Name="Minbtn"  Content="-" Margin="688,374,0,0" VerticalAlignment="Top" Height="94" Width="103" RenderTransformOrigin="-1.566,2.94"                      Background="#33EF8D0D" BorderBrush="#FF241212"/>
+        <Button x:ConnectionId='13'  x:Name="Plsbtn"  Content="+" Margin="581,374,0,0" VerticalAlignment="Top" Height="94" Width="103" RenderTransformOrigin="0.158,0.498"                      Background="#33F18F0E" BorderBrush="#FF2C1C1C"/>
+        <Button x:ConnectionId='14'  x:Name="Tmsbtn"  Content="*" Margin="474,472,0,0" VerticalAlignment="Top" Height="94" Width="103" RenderTransformOrigin="1.904,2.689"                      Background="#33E58E1C" BorderBrush="#FF1E1010"/>
+        <Button x:ConnectionId='15'  x:Name="Divbtn"  Content="/" Margin="367,472,0,0" VerticalAlignment="Top" Height="94" Width="103" RenderTransformOrigin="-2.284,1.751"                      Background="#33E18710" BorderBrush="#FF231010" />
+        <Button x:ConnectionId='16'  x:Name="Cbtn"    Content="C" Margin="581,472,0,0"  RenderTransformOrigin="-11.436,-2.012" Height="94" Width="103"                    VerticalAlignment="Top" Background="#33FD1E08" BorderBrush="#FF180D0D"/>
+        <Button x:ConnectionId='17'  x:Name="Eqbtn"   Content="=" Margin="688,472,0,0" Height="94" Width="103" RenderTransformOrigin="0.158,0.498" VerticalAlignment="Top"                     Background="#33097DFB" BorderBrush="#FF231010"/>
+        <TextBox x:ConnectionId='18' x:Name="AnsBox" HorizontalAlignment="Left" Margin="367,57,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="424" BorderBrush="#66141010" Background="#66C51212"/>
 
 
-
-        </Grid>
 
     </Grid>
 </Page>

@@ -27,9 +27,5 @@ namespace Abdelrahman_Mohamed_991343504_A2
             this.InitializeComponent();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-    }
+           }
 }

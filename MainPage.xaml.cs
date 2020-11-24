@@ -22,39 +22,32 @@ namespace Abdelrahman_Mohamed_991343504_A2
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        static int track = 0;
+        
         public MainPage()
         {
             this.InitializeComponent();
-            track += 1;
+            
         }
-
-
-
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
 
-
+         //   ContentFrame.Navigate(typeof(ApplicationInfo));
 
             var item = args.SelectedItemContainer;
-
-
-
-            //Navigationviewitem item = args.SelectedItem as Navigationview item
-
+            
             if (item != null)
             {
                 switch (item.Tag.ToString())
                 {
-                    case "HomeP":
+                    /*case "HomeP":
 
                       //  if (track > 1) NavView.IsPaneVisible = false;
                        // track += 1;
 
                         //ContentFrame.Navigate(typeof(MainPage));
                         break;
-
+                    */
                     case "CalcP":
                         NavView.IsPaneVisible = true;
                         ContentFrame.Navigate(typeof(Calculator));
