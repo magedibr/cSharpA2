@@ -23,11 +23,6 @@ namespace Abdelrahman_Mohamed_991343504_A2
     /// </summary>
     public sealed partial class Calculator : Page
     {
-        string input = string.Empty;
-        string x = string.Empty;
-        string y = string.Empty;
-        char operation;
-        string outd = " ";
         public Calculator()
         {
             this.InitializeComponent();
@@ -315,6 +310,8 @@ namespace Abdelrahman_Mohamed_991343504_A2
             OperandClass tree = BuildTreeOperand();
 
             double value = CalcTree(tree);
+
+            AnsBox.Text = value.ToString();
         }
 
         #endregion Equals

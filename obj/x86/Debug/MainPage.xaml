@@ -12,22 +12,22 @@
                     <NavigationView x:ConnectionId='2' x:Name="NavView"                                            >
 
                 <NavigationView.MenuItems>
-                   
-                    <NavigationViewItemHeader Content="Application" />
-                   <NavigationViewItem x:ConnectionId='3' x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
+
+                <NavigationViewItemHeader Content="Home"/>
+
+                <NavigationViewItemHeader Content="Application" />
+                    <NavigationViewItem x:ConnectionId='3' x:Name="CalcBtn"  Content="Calculator" Icon="Calculator" Tag="CalcP"/>
                    
                     <NavigationViewItemSeparator/>
                     <NavigationViewItemHeader Content="Information"/>
-                    <NavigationViewItem x:ConnectionId='4' x:Name="appInfoBtn" Content="Application Information" Icon="Import" Tag="AppIPage"/>
-                    <NavigationViewItem x:ConnectionId='5' x:Name="DevInfoBtn" Content="Developer Information" Icon="ContactInfo" Tag="DevIPage"/>
+                                        <NavigationViewItem x:ConnectionId='4' x:Name="DevInfoBtn" Content="Developer Information" Icon="ContactInfo" Tag="DevIPage"/>
 
                 </NavigationView.MenuItems>
+            
+            <Frame x:ConnectionId='5' x:Name="ContentFrame">
+                                            
 
-                <Frame x:ConnectionId='6' x:Name="ContentFrame">
-
-                                        
-                 
-                </Frame>
+            </Frame>
                 
                 
             </NavigationView>    
