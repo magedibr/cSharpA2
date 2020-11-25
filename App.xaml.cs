@@ -29,7 +29,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
         public App()
         {
             this.InitializeComponent();
-            this.Suspending += OnSuspending;
+           this.Suspending += OnSuspending;
         }
 
         /// <summary>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XnAAGz3NppIo3oX48f67LpMoyF9E4qLV2Mk+Zmy6KMeZfvEigxzWRro8G9YeCh0trzP8/r7moXkinOy4sQigaw==",
+  "dgSpecHash": "P06lUXGlxAYtdpJ4XyOj079kH7LQp7fg5HZ5ZYQnwhfarMVETwX/8mdYs3Zll6cMWglM7plzTzfQbcoLj/A7MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a_b_z\\source\\repos\\Abdelrahman_Mohamed_991343504_A2\\Abdelrahman_Mohamed_991343504_A2.csproj",
+  "projectFilePath": "C:\\Users\\a_b_z\\source\\repos\\Ama\\Abdelrahman_Mohamed_991343504_A2\\Abdelrahman_Mohamed_991343504_A2.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",

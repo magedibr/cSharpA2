@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Abdelrahman_Mohamed_991343504_A2.Dev"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Abdelrahman_Mohamed_991343504_A2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas Background="Bisque">
+
+        <TextBlock Text="Developer Name: Abdelrahman M." TextWrapping="Wrap" Canvas.Left="341" Canvas.Top="147" Height="199" Width="556" FontWeight="Bold" FontSize="70"  TextAlignment="Center" FocusVisualPrimaryBrush="#FF7E7979" FocusVisualSecondaryBrush="#999E6161" RenderTransformOrigin="0.771,0.524" FontFamily="Arial" FontStretch="ExtraCondensed" TextDecorations="Underline"/>
+        <TextBlock Canvas.Top="417" TextWrapping="Wrap" Height="153" Width="657" FontSize="60"  FontWeight="Bold" TextAlignment="Center" Canvas.Left="292" FontFamily="Arial" FontStyle="Italic" FontStretch="ExtraCondensed" TextDecorations="Underline"><Run Text="Developer Email: "/><LineBreak/><Run Text="Magedibr@sheridanc.on.ca"/></TextBlock>
+
+
+    </Canvas>
+
+</Page>
+

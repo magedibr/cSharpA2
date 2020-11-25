@@ -8157,11 +8157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a_b_z\\source\\repos\\Abdelrahman_Mohamed_991343504_A2\\Abdelrahman_Mohamed_991343504_A2.csproj",
+      "projectUniqueName": "C:\\Users\\a_b_z\\source\\repos\\Ama\\Abdelrahman_Mohamed_991343504_A2\\Abdelrahman_Mohamed_991343504_A2.csproj",
       "projectName": "Abdelrahman_Mohamed_991343504_A2",
-      "projectPath": "C:\\Users\\a_b_z\\source\\repos\\Abdelrahman_Mohamed_991343504_A2\\Abdelrahman_Mohamed_991343504_A2.csproj",
+      "projectPath": "C:\\Users\\a_b_z\\source\\repos\\Ama\\Abdelrahman_Mohamed_991343504_A2\\Abdelrahman_Mohamed_991343504_A2.csproj",
       "packagesPath": "C:\\Users\\a_b_z\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a_b_z\\source\\repos\\Abdelrahman_Mohamed_991343504_A2\\obj\\",
+      "outputPath": "C:\\Users\\a_b_z\\source\\repos\\Ama\\Abdelrahman_Mohamed_991343504_A2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

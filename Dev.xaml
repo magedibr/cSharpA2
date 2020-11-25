@@ -8,12 +8,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Canvas Background="Bisque">
+    <Grid  VerticalAlignment="Center" HorizontalAlignment="Center" Background="Bisque" Height="700" Width="1280" >
 
-        <TextBlock Text="Developer Name: Abdelrahman M." TextWrapping="Wrap" Canvas.Left="341" Canvas.Top="147" Height="199" Width="556" FontWeight="Bold" FontSize="70"  TextAlignment="Center" FocusVisualPrimaryBrush="#FF7E7979" FocusVisualSecondaryBrush="#999E6161" RenderTransformOrigin="0.771,0.524" FontFamily="Arial" FontStretch="ExtraCondensed" TextDecorations="Underline"/>
-        <TextBlock Canvas.Top="417" TextWrapping="Wrap" Height="153" Width="657" FontSize="60"  FontWeight="Bold" TextAlignment="Center" Canvas.Left="292" FontFamily="Arial" FontStyle="Italic" FontStretch="ExtraCondensed" TextDecorations="Underline"><Run Text="Developer Email: "/><LineBreak/><Run Text="Magedibr@sheridanc.on.ca"/></TextBlock>
+        <TextBlock Text="Developer Name: Abdelrahman M." TextWrapping="Wrap" Height="199" Width="556" FontWeight="Bold" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" FocusVisualPrimaryBrush="#FF7E7979" FocusVisualSecondaryBrush="#999E6161" RenderTransformOrigin="0.771,0.524" FontFamily="Arial" FontStretch="ExtraCondensed" TextDecorations="Underline" Margin="347,189,0,0"/>
+        <TextBlock TextWrapping="Wrap" Height="153" Width="657" FontSize="60"  FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" FontFamily="Arial" FontStyle="Italic" FontStretch="ExtraCondensed" TextDecorations="Underline" Margin="309,434,0,0"><Run Text="Developer Email: "/><LineBreak/><Run Text="Magedibr@sheridanc.on.ca"/></TextBlock>
+    </Grid>
 
 
-    </Canvas>
 
 </Page>

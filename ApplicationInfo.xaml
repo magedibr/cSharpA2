@@ -8,14 +8,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Canvas Margin="8,7,-8,-7" Background="BlanchedAlmond">
+    <Grid  VerticalAlignment="Center" HorizontalAlignment="Center" Background="Bisque" Height="720" Width="1280" >
 
 
 
-            <TextBlock Text="Calculator Application" TextWrapping="Wrap" Canvas.Left="82" Canvas.Top="227" Height="140" Width="1094" FontWeight="Bold" FontSize="100" SelectionChanged="TextBlock_SelectionChanged"/>
-            <TextBlock Canvas.Left="437" Canvas.Top="413" Text="Version 1.0" TextWrapping="Wrap" Height="84" Width="377" FontSize="60"/>
-        </Canvas>
+        <TextBlock Text="Calculator Application" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="140" Width="526" FontWeight="Bold" FontSize="50" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock Text="Version 1.0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="226" FontSize="45" RenderTransformOrigin="0.493,1.893" Margin="532,390,0,0"/>
 
     </Grid>
 </Page>
