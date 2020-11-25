@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Abdelrahman_Mohamed_991343504_A2
+namespace AM_A2
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -26,6 +26,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
         public Calculator()
         {
             this.InitializeComponent();
+
             AnsBox.Text = "0";
         }
 
@@ -35,23 +36,18 @@ namespace Abdelrahman_Mohamed_991343504_A2
             if (char.IsNumber(AnsBox.Text.Last()))
             {
                 if (AnsBox.Text.Length == 1 && AnsBox.Text == "0")
-                {
-
+                {      
                     AnsBox.Text = string.Empty;
                 }
                 AnsBox.Text += addResultNumber;
             }
             else if (addResultNumber != 0)
             {
-
-
                 AnsBox.Text += addResultNumber;
-
-
             }
         }//EOFunc
 
-//Enum used to store precedence
+        //Enum used to store precedence
         enum Operands { MINUS = 1, PLUS = 2, DIV = 3, TIMES = 4, NUMBER = 5 };
         private void AddOperationToResult(Operands operands)
         {
@@ -74,35 +70,11 @@ namespace Abdelrahman_Mohamed_991343504_A2
                 case Operands.DIV: AnsBox.Text += "/"; break;
 
                 case Operands.TIMES: AnsBox.Text += "x"; break;
-                    //   case Operands: AnsBox.Text += "-"; break;
-
-
-
-
 
             }
-
-
-
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //Button event handlers for calculator
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             AddNumberToResult(1);
@@ -179,11 +151,11 @@ namespace Abdelrahman_Mohamed_991343504_A2
         {
             AnsBox.Text = 0.ToString();
         }
+        //End of button handlers
 
-
-        #region Equals
         //Tree definition to be able to determine order of precedence
 
+        //Operand class to act as a heap to store operands
         private class OperandClass
         {
             public Operands opp = Operands.NUMBER;
@@ -192,7 +164,9 @@ namespace Abdelrahman_Mohamed_991343504_A2
             public OperandClass left = null;
             public OperandClass right = null;
 
-        }
+        }//End of Operand class
+
+
         //Actual tree construction from the expression
         private OperandClass BuildTreeOperand()
         {
@@ -204,9 +178,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
             if (!char.IsNumber(expression.Last()))
             {
 
-
                 expression = expression.Substring(0, expression.Length - 1);
-
 
             }
 
@@ -253,8 +225,9 @@ namespace Abdelrahman_Mohamed_991343504_A2
             {
 
                 tree = elem;
-            
-            }else
+
+            }
+            else
             {
                 if (elem.opp < tree.opp)
                 {
@@ -262,9 +235,10 @@ namespace Abdelrahman_Mohamed_991343504_A2
                     tree = elem;
                     elem.left = auxTree;
 
-                }else
+                }
+                else
                 {
-                    AddOperandToTree(ref tree.right, elem);// recursion
+                    AddOperandToTree(ref tree.right, elem);// recursion used to loop through operands
                 }
             }
 
@@ -272,7 +246,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
 
         private double CalcTree(OperandClass tree)
         {
-            if(tree.left == null && tree.right == null) 
+            if (tree.left == null && tree.right == null)
             {
                 return tree.value;
 
@@ -280,13 +254,13 @@ namespace Abdelrahman_Mohamed_991343504_A2
             else //its an operation
             {
                 double subResult = 0;
-                switch(tree.opp)
+                switch (tree.opp)
                 {
-                    
-                    case Operands.MINUS: subResult = CalcTree(tree.left)-CalcTree(tree.right);break;
-                    case Operands.PLUS: subResult = CalcTree(tree.left)+CalcTree(tree.right);break;
-                    case Operands.DIV: subResult = CalcTree(tree.left)/CalcTree(tree.right);break;
-                    case Operands.TIMES: subResult = CalcTree(tree.left)*CalcTree(tree.right);break;
+
+                    case Operands.MINUS: subResult = CalcTree(tree.left) - CalcTree(tree.right); break;
+                    case Operands.PLUS: subResult = CalcTree(tree.left) + CalcTree(tree.right); break;
+                    case Operands.DIV: subResult = CalcTree(tree.left) / CalcTree(tree.right); break;
+                    case Operands.TIMES: subResult = CalcTree(tree.left) * CalcTree(tree.right); break;
 
 
                 }
@@ -295,11 +269,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
             }
         }
 
-
-
-
-
-
+        //Display results
         private void Eqbtn_Click(object sender, RoutedEventArgs e)
         {
 
@@ -313,9 +283,8 @@ namespace Abdelrahman_Mohamed_991343504_A2
 
             AnsBox.Text = value.ToString();
         }
-
-        #endregion Equals
     }
 }
+    
 
 

@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace Abdelrahman_Mohamed_991343504_A2
+namespace AM_A2
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -29,6 +29,9 @@ namespace Abdelrahman_Mohamed_991343504_A2
             this.InitializeComponent();
             ApplicationView.PreferredLaunchViewSize = new Size(1200, 700);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            ApplicationView appView = ApplicationView.GetForCurrentView();
+appView.Title = "Calculator";
+            ContentFrame.Navigate(typeof(ApplicationInfo));
         }
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -42,15 +45,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
             {
                 switch (item.Tag.ToString())
                 {
-                    /*case "HomeP":
-
-                      //  if (track > 1) NavView.IsPaneVisible = false;
-                       // track += 1;
-
-                        //ContentFrame.Navigate(typeof(MainPage));
-                        break;
-                    */
-                    case "CalcP":
+                   case "CalcP":
                         NavView.IsPaneVisible = true;
                         ContentFrame.Navigate(typeof(Calculator));
                         break;

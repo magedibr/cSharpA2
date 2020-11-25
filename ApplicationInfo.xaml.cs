@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Abdelrahman_Mohamed_991343504_A2
+namespace AM_A2
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.

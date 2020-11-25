@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Abdelrahman_Mohamed_991343504_A2
+namespace AM_A2
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

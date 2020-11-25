@@ -34,9 +34,8 @@
       <RootProperty Name="TextDecorations" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="Inlines" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="Abdelrahman_Mohamed_991343504_A2.ApplicationInfo" />
+    <RootType FullName="AM_A2.ApplicationInfo" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
@@ -60,12 +59,12 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Abdelrahman_Mohamed_991343504_A2.Calculator" />
+    <RootType FullName="AM_A2.Calculator" />
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
-    <RootType FullName="Abdelrahman_Mohamed_991343504_A2.Dev" />
+    <RootType FullName="AM_A2.Dev" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="MenuItems" />
       <RootProperty Name="Content" />
@@ -81,6 +80,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItemSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
-    <RootType FullName="Abdelrahman_Mohamed_991343504_A2.MainPage" />
+    <RootType FullName="AM_A2.MainPage" />
   </Roots.RootTypes>
 </Roots>

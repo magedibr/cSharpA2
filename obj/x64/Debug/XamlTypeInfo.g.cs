@@ -8,22 +8,22 @@
 //------------------------------------------------------------------------------
 
 
-namespace Abdelrahman_Mohamed_991343504_A2
+namespace AM_A2
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
-        private global::Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo.XamlMetaDataProvider __appProvider;
+        private global::Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo.XamlMetaDataProvider __appProvider;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo.XamlMetaDataProvider _AppProvider
+        private global::Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo.XamlMetaDataProvider _AppProvider
         {
             get
             {
                 if (__appProvider == null)
                 {
-                    __appProvider = new global::Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo.XamlMetaDataProvider();
+                    __appProvider = new global::Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo.XamlMetaDataProvider();
                 }
                 return __appProvider;
             }
@@ -61,7 +61,7 @@ namespace Abdelrahman_Mohamed_991343504_A2
     }
 }
 
-namespace Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo
+namespace Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo
 {
     /// <summary>
     /// Main class for providing metadata for the app or library
@@ -70,15 +70,15 @@ namespace Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_Xaml
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
+        private global::Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
 
-        private global::Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo.XamlTypeInfoProvider Provider
+        private global::Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo.XamlTypeInfoProvider Provider
         {
             get
             {
                 if (_provider == null)
                 {
-                    _provider = new global::Abdelrahman_Mohamed_991343504_A2.Abdelrahman_Mohamed_991343504_A2_XamlTypeInfo.XamlTypeInfoProvider();
+                    _provider = new global::Abdelrahman_Mohamed_991343504_A2.AM_A2_XamlTypeInfo.XamlTypeInfoProvider();
                 }
                 return _provider;
             }
